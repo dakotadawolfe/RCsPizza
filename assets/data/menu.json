@@ -1,0 +1,154 @@
+{
+  "categories": [
+    {
+      "id": "pizza",
+      "name": "Pizza"
+    },
+    {
+      "id": "slices",
+      "name": "Slices"
+    },
+    {
+      "id": "appetizers",
+      "name": "Appetizers & Wings"
+    },
+    {
+      "id": "subs",
+      "name": "Subs & Sandwiches"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts"
+    },
+    {
+      "id": "kids",
+      "name": "Kids Menu"
+    }
+  ],
+  "items": [
+    {
+      "id": "ny-thin",
+      "name": "NY Thin Crust",
+      "category": "pizza",
+      "description": "Classic New York–style thin crust, hand-tossed.",
+      "price": null,
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": "sicilian",
+      "name": "Sicilian",
+      "category": "pizza",
+      "description": "Thick, square Sicilian-style pan pizza.",
+      "price": null,
+      "sizes": ["Square"]
+    },
+    {
+      "id": "new-haven",
+      "name": "New Haven Style",
+      "category": "pizza",
+      "description": "Charred, thin crust inspired by the Elm City.",
+      "price": null,
+      "sizes": ["Medium", "Large"]
+    },
+    {
+      "id": "chicago-tavern",
+      "name": "Chicago Tavern Style",
+      "category": "pizza",
+      "description": "Thin, crisp, cut in squares.",
+      "price": null,
+      "sizes": ["Medium", "Large"]
+    },
+    {
+      "id": "slice-cheese",
+      "name": "Cheese Slice",
+      "category": "slices",
+      "description": "Classic cheese slice.",
+      "price": null
+    },
+    {
+      "id": "slice-pepperoni",
+      "name": "Pepperoni Slice",
+      "category": "slices",
+      "description": "Pepperoni slice.",
+      "price": null
+    },
+    {
+      "id": "slice-special",
+      "name": "Special Slice",
+      "category": "slices",
+      "description": "Ask for today's special slice.",
+      "price": null
+    },
+    {
+      "id": "wings",
+      "name": "Wings",
+      "category": "appetizers",
+      "description": "Crispy wings with your choice of sauce.",
+      "price": null,
+      "sizes": ["6 pc", "12 pc", "24 pc"]
+    },
+    {
+      "id": "garlic-bread",
+      "name": "Garlic Bread",
+      "category": "appetizers",
+      "description": "Toasted garlic bread.",
+      "price": null
+    },
+    {
+      "id": "mozzarella-sticks",
+      "name": "Mozzarella Sticks",
+      "category": "appetizers",
+      "description": "Fried mozzarella with marinara.",
+      "price": null
+    },
+    {
+      "id": "meatball-sub",
+      "name": "Meatball Sub",
+      "category": "subs",
+      "description": "Meatballs, marinara, and melted cheese on a sub roll.",
+      "price": null
+    },
+    {
+      "id": "chicken-parm-sub",
+      "name": "Chicken Parm Sub",
+      "category": "subs",
+      "description": "Breaded chicken, marinara, and mozzarella.",
+      "price": null
+    },
+    {
+      "id": "italian-sub",
+      "name": "Italian Sub",
+      "category": "subs",
+      "description": "Classic Italian cold cuts and fixings.",
+      "price": null
+    },
+    {
+      "id": "cannoli",
+      "name": "Cannoli",
+      "category": "desserts",
+      "description": "Traditional cannoli with sweet ricotta filling.",
+      "price": null
+    },
+    {
+      "id": "tiramisu",
+      "name": "Tiramisu",
+      "category": "desserts",
+      "description": "Espresso-soaked ladyfingers and mascarpone.",
+      "price": null
+    },
+    {
+      "id": "kids-pizza",
+      "name": "Kids Pizza",
+      "category": "kids",
+      "description": "Personal-size pizza for the little ones.",
+      "price": null
+    },
+    {
+      "id": "kids-pasta",
+      "name": "Kids Pasta",
+      "category": "kids",
+      "description": "Simple pasta with butter or marinara.",
+      "price": null
+    }
+  ]
+}

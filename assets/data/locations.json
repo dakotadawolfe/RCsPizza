@@ -1,0 +1,42 @@
+{
+  "locations": [
+    {
+      "id": "kingwood",
+      "name": "Kingwood",
+      "address": "1202 Kingwood Drive, Suite A, Kingwood, TX 77339",
+      "phone": "(281) 358-4663",
+      "phoneRaw": "2813584663",
+      "hours": {
+        "sunday": "11AM–8PM",
+        "monday": "11AM–8PM",
+        "tuesday": "Closed",
+        "wednesday": "11AM–8PM",
+        "thursday": "11AM–8PM",
+        "friday": "11AM–9PM",
+        "saturday": "11AM–9PM"
+      },
+      "hoursSummary": "Sun–Thu 11AM–8PM, Fri–Sat 11AM–9PM, Closed Tuesday",
+      "orderUrl": "https://order.toasttab.com/online/rc-s-nyc-pizza-pasta-kingwood-1202-kingwood-drive-suite-a",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=1202+Kingwood+Drive+Suite+A+Kingwood+TX+77339"
+    },
+    {
+      "id": "woodlands",
+      "name": "The Woodlands",
+      "address": "501 Sawdust Road, Suite 1, The Woodlands, TX 77380",
+      "phone": "(281) 298-4663",
+      "phoneRaw": "2812984663",
+      "hours": {
+        "sunday": "11AM–8PM",
+        "monday": "11AM–8PM",
+        "tuesday": "Closed",
+        "wednesday": "11AM–8PM",
+        "thursday": "11AM–8PM",
+        "friday": "11AM–9PM",
+        "saturday": "11AM–9PM"
+      },
+      "hoursSummary": "Sun–Thu 11AM–8PM, Fri–Sat 11AM–9PM, Closed Tuesday",
+      "orderUrl": "https://order.toasttab.com/",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=501+Sawdust+Road+Suite+1+The+Woodlands+TX+77380"
+    }
+  ]
+}
