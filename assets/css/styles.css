@@ -11,6 +11,9 @@
   --border: #333;
   --radius: 6px;
   --font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --section-light: #f5f1eb;
+  --section-light-text: #2a2a2a;
+  --section-light-muted: #555;
 }
 
 *,
@@ -78,12 +81,13 @@ button:focus-visible {
 
 /* Layout */
 .site-header {
-  background: var(--bg);
+  background: linear-gradient(180deg, var(--bg) 0%, #151515 100%);
   border-bottom: 2px solid var(--red);
   padding: 1rem 1.25rem;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .site-header .wrap {
@@ -221,7 +225,7 @@ main {
 .hero {
   text-align: center;
   padding: 3rem 1rem 4rem;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%),
+  background: linear-gradient(180deg, rgba(30, 15, 10, 0.45) 0%, rgba(30, 15, 10, 0.35) 100%),
     url("https://rcsnycpizza.com/wp-content/uploads/2018/02/rcs-pizza-slice-1024x683.jpg") center / cover no-repeat;
   border-bottom: 1px solid var(--border);
 }
@@ -257,6 +261,45 @@ main {
   min-width: 140px;
 }
 
+/* Food image strip */
+.food-strip {
+  background: var(--bg-card);
+  padding: 1.5rem 0 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.food-strip-title {
+  text-align: center;
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.food-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 100%;
+}
+
+.food-strip-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .food-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .food-strip-grid img {
+    height: 160px;
+  }
+}
+
 /* Section titles */
 .section-title {
   margin: 0 0 0.5rem;
@@ -279,10 +322,11 @@ main {
 
 .location-card {
   background: var(--bg-card);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(60, 50, 45, 0.6);
   border-radius: var(--radius);
   padding: 0;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .location-card > img {
@@ -347,6 +391,24 @@ main {
   min-width: 120px;
 }
 
+/* Light section (alternating band) */
+.section-alt {
+  background: var(--section-light);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 2rem 1.25rem 2.5rem;
+  padding-left: max(1.25rem, calc(50vw - 600px));
+  padding-right: max(1.25rem, calc(50vw - 600px));
+}
+
+.section-alt .section-title {
+  color: var(--section-light-text);
+}
+
+.section-alt .section-subtitle {
+  color: var(--section-light-muted);
+}
+
 /* Pizza styles section */
 .pizza-styles {
   padding: 2rem 0;
@@ -359,34 +421,63 @@ main {
 }
 
 .pizza-style-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1rem;
+  padding: 1.25rem;
   text-align: center;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid var(--border);
+}
+
+.pizza-style-card:nth-child(1) {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url("https://rcsnycpizza.com/wp-content/uploads/2018/02/rcs-pizza-slice-1024x683.jpg");
+}
+
+.pizza-style-card:nth-child(2) {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url("https://rcsnycpizza.com/wp-content/uploads/2018/02/RCs-Pizza-049-1024x683.jpg");
+}
+
+.pizza-style-card:nth-child(3) {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url("https://rcsnycpizza.com/wp-content/uploads/2018/02/RCs-Pizza-159-1024x683.jpg");
+}
+
+.pizza-style-card:nth-child(4) {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url("https://rcsnycpizza.com/wp-content/uploads/2018/02/RCs-Pizza-170-1024x683.jpg");
 }
 
 .pizza-style-card strong {
   display: block;
-  color: var(--yellow);
+  color: #fff;
   font-size: 0.95rem;
   margin-bottom: 0.25rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .pizza-style-card span {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 /* Reviews placeholder */
 .reviews-section {
   padding: 2rem 0;
   border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(196, 30, 58, 0.08) 0%, rgba(30, 15, 10, 0.12) 100%);
 }
 
 .reviews-placeholder {
   background: var(--bg-card);
-  border: 1px dashed var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
   text-align: center;
@@ -395,8 +486,8 @@ main {
 
 /* Footer */
 .site-footer {
-  background: var(--bg-card);
-  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--bg-card) 0%, #1e1e1e 100%);
+  border-top: 2px solid var(--red);
   padding: 1.5rem 1.25rem;
   margin-top: 2rem;
 }
