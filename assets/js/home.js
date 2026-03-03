@@ -34,6 +34,8 @@
       var img = document.createElement('img');
       img.src = imgSrc;
       img.alt = imgAlt;
+      img.width = 1024;
+      img.height = 683;
       img.loading = 'lazy';
       img.decoding = 'async';
       card.appendChild(img);
