@@ -3,6 +3,7 @@
     {
       "id": "kingwood",
       "name": "Kingwood",
+      "image": "https://rcsnycpizza.com/wp-content/uploads/2018/02/rcs-pizza-slice-1024x683.jpg",
       "address": "1202 Kingwood Drive, Suite A, Kingwood, TX 77339",
       "phone": "(281) 358-4663",
       "phoneRaw": "2813584663",
@@ -35,6 +36,7 @@
         "saturday": "11AM\u20139PM"
       },
       "hoursSummary": "Sun\u2013Thu 11AM\u20138PM, Fri\u2013Sat 11AM\u20139PM, Closed Tuesday",
+      "image": "https://rcsnycpizza.com/wp-content/uploads/2018/02/RCs-Pizza-049-1024x683.jpg",
       "orderUrl": "https://order.toasttab.com/online/rc-s-nyc-pizza-pasta-501-sawdust-rd-suite-i",
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=501+Sawdust+Road+Suite+1+The+Woodlands+TX+77380"
     }
